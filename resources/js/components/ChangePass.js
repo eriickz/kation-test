@@ -17,7 +17,7 @@ function ChangePass() {
         if ( password === password2 ) {
             db.changePassword(recoverEmail, password).then(res => {
                 if ( res ) {
-
+                    window.location.replace('/login');
                 }
             })
         } else {
